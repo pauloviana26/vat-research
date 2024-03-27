@@ -1,8 +1,8 @@
 package com.viana.vatresearch.service;
 
-import com.viana.vatresearch.client.model.VatInfo;
+import com.viana.vatresearch.client.model.VatInfoResponse;
 
 public interface VatService {
 
-    VatInfo validateVatNumber(String vatNumber, String countryCode);
+    VatInfoResponse validateVatNumber(String vatNumber, String countryCode);
 }

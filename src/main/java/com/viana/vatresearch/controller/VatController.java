@@ -1,6 +1,6 @@
 package com.viana.vatresearch.controller;
 
-import com.viana.vatresearch.client.model.VatInfo;
+import com.viana.vatresearch.client.model.VatInfoResponse;
 import com.viana.vatresearch.service.VatService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ public class VatController {
     }
 
     @GetMapping
-    public VatInfo validateVat(@RequestParam String vatNumber, @RequestParam(required = false) String countryCode) {
+    public VatInfoResponse validateVat(@RequestParam String vatNumber, @RequestParam(required = false) String countryCode) {
         return vatService.validateVatNumber(vatNumber, countryCode);
     }
 }

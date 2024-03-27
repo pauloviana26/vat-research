@@ -2,7 +2,7 @@ package com.viana.vatresearch.client.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class VatInfo {
+public class VatInfoResponse {
 
     @JsonProperty("country_code")
     private String countryCode;
@@ -17,9 +17,9 @@ public class VatInfo {
     private boolean checksumValid;
 
     @JsonProperty("registration_info")
-    private RegistrationInfo registrationInfo;
+    private RegistrationInfoResponse registrationInfoResponse;
 
-    public VatInfo() {
+    public VatInfoResponse() {
     }
 
     public String getCountryCode() {
@@ -38,7 +38,7 @@ public class VatInfo {
         return checksumValid;
     }
 
-    public RegistrationInfo getRegistrationInfo() {
-        return registrationInfo;
+    public RegistrationInfoResponse getRegistrationInfoResponse() {
+        return registrationInfoResponse;
     }
 }

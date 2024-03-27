@@ -2,7 +2,7 @@ package com.viana.vatresearch.client.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class RegistrationInfo {
+public class RegistrationInfoResponse {
 
     @JsonProperty("is_registered")
     private boolean isRegistered;
@@ -14,7 +14,7 @@ public class RegistrationInfo {
     @JsonProperty("checked_at")
     private String checkedAt;
 
-    public RegistrationInfo() {
+    public RegistrationInfoResponse() {
     }
 
     public boolean isRegistered() {
